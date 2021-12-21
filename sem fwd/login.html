@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            LOGIN
+        </div>
+        <form action="form.html">
+        <div class="details">
+            <div class="dappa">
+                <span class="words" >Username</span>
+                    <input type="text" id="uid" required>
+            </div>
+            <div class="dappa">
+                <span class="words">Password</span>
+                    <input type="password" id="pp" required>
+            </div>
+        </div>
+        <div class="but">
+            <button type="submit" onclick="return pssy()">SUBMIT</button>
+        </div>
+         </form>
+    </div>
+</body>
+<script>
+function pssy(){
+        var usname=document.getElementById("uid").value;
+        var psw=document.getElementById("pp").value;
+        if(psw.length<5){
+             alert("The passowrd must be contain more than 5 words!");
+             return false;
+            }
+        
+        else
+        return true;
+    }
+
+</script>
+</html>

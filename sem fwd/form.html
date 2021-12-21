@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Fill Up
+        </div>
+        <form action="print.html">
+            <div class="details">
+                <div class="dapps">
+                    <span class="words">Full Name</span>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="dapps">
+                    <span class="words">Full Name</span>
+                    <input type="text">
+                </div>
+
+                <div class="dapps">
+                    <div class="drops">
+                        <span class="words">Full Name</span>
+                        <select id="cars" name="cars">
+                            <option value="volvo">Select any option</option>
+                            <option value="volvo">Volvo</option>
+                             <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                             <option value="audi">Audi</option>
+                         </select>
+                    </div>
+                </div>
+
+                <div class="dapps">
+                    <span class="words">Full Name</span>
+                    <input type="text">
+                </div>
+
+                <div class="dapps">
+                    <span class="words">Full Name</span>
+                    <input type="text">
+                </div>
+
+                <div class="dapps">
+                    <span class="words">Full Name</span>
+                    <input type="text">
+                </div>
+
+                <div class="dapps">
+                    <span class="words">Full Name</span>
+                    <input type="text">
+                </div>
+                
+                
+            </div>
+            <button id="but" onclick="passy()">submit</button>
+        </form>
+    </div>
+</body>
+
+<script>
+    function passy(){
+        var name= document.getElementById("name").value;
+        alert(name);
+        var cars=document.getElementById("cars").value;
+        localStorage.setItem("textvalue",name);
+        localStorage.setItem("cc",cars);
+    }
+</script>
+</html>
